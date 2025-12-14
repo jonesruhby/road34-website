@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/jpeg" href="/road34-favicon.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bike Shop Service Menu | Road 34</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Oswald:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- Simple Splide or CSS Slider for "Intro Slide"? Let's do CSS for simplicity/performance -->
+</head>
+
+<body>
+    <header id="global-header"></header>
+
+    <main class="page-shop-redux">
+
+        <!-- 1. Intro Slide (Cool Bike Pictures) -->
+        <section class="shop-hero-slider">
+            <div class="slide" style="background-image: url('images/shop-hero-precision.png');">
+                <div class="hero-overlay">
+                    <h1 class="slide-title">Precision Mechanics</h1>
+                </div>
+            </div>
+            <div class="slide active" style="background-image: url('images/shop-hero-ride-ready.png');">
+                <div class="hero-overlay">
+                    <h1 class="slide-title">Ride Ready</h1>
+                </div>
+            </div>
+            <div class="hero-slide"
+                style="background-image: url('https://images.unsplash.com/photo-1618762044398-ec1e7e048bbd?q=80&w=2070&auto=format&fit=crop');">
+                <div class="hero-overlay">
+                    <h1 class="slide-title">Expert Service</h1>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Value Proposition (Removed) -->
+        <!-- <section class="value-prop section text-center"> ... </section> -->
+
+        <!-- 3. Big Box Selection (Toggle) -->
+        <section class="service-selection section">
+            <div class="container">
+                <h2 class="text-center" style="margin-bottom: var(--spacing-lg);">Choose Your Service</h2>
+                <div class="selector-container">
+                    <button class="selector-box active" id="btn-commuter">
+                        <i class="ph ph-bicycle"></i>
+                        <span>Commuter & Road</span>
+                    </button>
+                    <button class="selector-box" id="btn-mtb">
+                        <i class="ph ph-mountains"></i>
+                        <span>Mountain Bike</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Service Sections (One at a time) -->
+        <section class="services-display section">
+            <div class="container">
+
+                <!-- Commuter Panel (Default Visible) -->
+                <div class="service-content-panel active" id="content-commuter">
+                    <h2 class="panel-title text-center">Commuter Services</h2>
+
+                    <!-- Tunes -->
+                    <div class="service-grid">
+                        <div class="service-card">
+                            <h4>Safety / Single Speed Tune</h4>
+                            <p class="price">$50</p>
+                            <p class="desc">We will meticulously adjust your brakes for optimal stopping power,
+                                thoroughly lube your chain to ensure a smooth ride, and perform a comprehensive check of
+                                the entire bike to guarantee your safety on the road.</p>
+                        </div>
+                        <div class="service-card featured">
+                            <h4>Basic Tune</h4>
+                            <p class="price">$75</p>
+                            <p class="desc">Our standard service includes truing your wheels, precise adjustments of
+                                brakes, derailleurs, and headset, along with lubricating the chain and cables and
+                                checking your drivetrain for wear.</p>
+                        </div>
+                        <div class="service-card">
+                            <h4>Full Tune</h4>
+                            <p class="price">$100</p>
+                            <p class="desc">Everything in the Basic Tune, plus we will adjust your hubs and bottom
+                                bracket to eliminate play, followed by a basic wash and wipe down to get your bike
+                                looking fresh.</p>
+                        </div>
+                        <div class="service-card premium">
+                            <h4>Deluxe Tune</h4>
+                            <p class="price">$150</p>
+                            <p class="desc">The ultimate overhaul treatment. Includes the Full Tune plus installation of
+                                brand new cables and housing for crisp shifting, finished with a deep chemical clean of
+                                your entire drivetrain.</p>
+                        </div>
+                    </div>
+
+                    <!-- Ala Cart Lists -->
+                    <h3 class="ala-cart-title text-center">ALA CART</h3>
+                    <div class="ala-cart-columns">
+                        <div class="cart-col">
+                            <h5>Builds</h5>
+                            <ul>
+                                <li>Box Build <span>$60</span></li>
+                                <li>Frame Up <span>$100</span></li>
+                                <li>Frame Saver <span>$25/$100</span></li>
+                            </ul>
+                        </div>
+                        <div class="cart-col">
+                            <h5>Brakes</h5>
+                            <ul>
+                                <li>Adjust <span>$10</span></li>
+                                <li>w/ Cable <span>$20</span></li>
+                                <li>w/ Housing <span>$30</span></li>
+                            </ul>
+                        </div>
+                        <!-- Add more columns as needed for Drivetrain, Front End, Wheels... -->
+                        <div class="cart-col">
+                            <h5>Essentials</h5>
+                            <ul>
+                                <li>Flat Repair <span>$8</span></li>
+                                <li>True Wheel <span>$15+</span></li>
+                                <li>Chain Install <span>$5</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MTB Panel (Hidden) -->
+                <div class="service-content-panel" id="content-mtb">
+                    <h2 class="panel-title text-center">MTB Services</h2>
+
+                    <!-- iTunes -->
+                    <div class="service-grid">
+                        <div class="service-card">
+                            <h4>Basic MTB Tune</h4>
+                            <p class="price">$110</p>
+                            <p class="desc">True wheels, bleed brakes, adjust all systems, lube, sealant check, basic
+                                wash.</p>
+                        </div>
+                        <div class="service-card featured">
+                            <h4>Seasonal Service</h4>
+                            <p class="price">$200</p>
+                            <p class="desc">Basic MTB + F/R Suspension service, dropper check, hub adjust, BB tighten.
+                            </p>
+                        </div>
+                        <div class="service-card premium">
+                            <h4>"Make It New Again"</h4>
+                            <p class="price">$350</p>
+                            <p class="desc">Seasonal + replace 8 bearings, new cables/housing, full deep clean.</p>
+                        </div>
+                    </div>
+
+                    <!-- Suspension -->
+                    <h3 class="subsection-title">Suspension & Droppers</h3>
+                    <div class="suspension-grid">
+                        <div class="sus-item">
+                            <span>Fork Service</span>
+                            <span class="price">$70 + seals</span>
+                        </div>
+                        <div class="sus-item">
+                            <span>Rear Shock</span>
+                            <span class="price">$50 + seals</span>
+                        </div>
+                        <div class="sus-item">
+                            <span>Combo F/R</span>
+                            <span class="price">$100 + seals</span>
+                        </div>
+                        <div class="sus-item">
+                            <span>Reverb Rebuild</span>
+                            <span class="price">$160</span>
+                        </div>
+                    </div>
+
+                    <h3 class="ala-cart-title text-center">ALA CART</h3>
+                    <div class="ala-cart-columns">
+                        <div class="cart-col">
+                            <h5>Tubeless / Tires</h5>
+                            <ul>
+                                <li>CushCore Install <span>$15</span></li>
+                                <li>Tubeless New <span>$25</span></li>
+                                <li>Reseal <span>$10</span></li>
+                            </ul>
+                        </div>
+                        <div class="cart-col">
+                            <h5>Hydraulics</h5>
+                            <ul>
+                                <li>Bleed <span>$20</span></li>
+                                <li>Internal Install <span>$20</span></li>
+                                <li>Install w/ Bleed <span>$30</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer Policy -->
+        <section class="policies-section">
+            <div class="container text-center">
+                <p class="highlight-text">Storage Fee: Bikes left 7 days after service is finished will be charged a
+                    storage fee.</p>
+                <p class="estimate-text">Call for Estimates: <a href="tel:9704919934">(970) 491-9934</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer id="global-footer"></footer>
+    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/shop.js"></script>
+</body>
+
+</html>

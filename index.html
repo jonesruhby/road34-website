@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/jpeg" href="/road34-favicon.jpg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Road 34 | Bike Shop & Bar</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Oswald:wght@400;700&display=swap"
+    rel="stylesheet">
+  <!-- Phosphor Icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+  <header id="global-header"></header>
+
+  <main>
+    <!-- Hero Section: Split Screen -->
+    <section class="hero-split">
+      <div class="split-side bar-side">
+        <div class="split-content">
+          <h2>The Bar</h2>
+          <p class="hours">Bar Open Everyday<br>11AM - 2AM</p>
+          <a href="tel:9702213434" class="btn btn-outline">(970) 221-3434</a>
+        </div>
+        <div class="split-bg" style="background-image: url('images/bar-interior.png');">
+        </div>
+        <div class="overlay"></div>
+      </div>
+      <div class="split-side shop-side">
+        <div class="split-content">
+          <h2>The Shop</h2>
+          <p class="hours">Shop Open<br>Tues-Sun</p>
+          <a href="tel:9704919934" class="btn btn-outline">(970) 491-9934</a>
+        </div>
+        <div class="split-bg" style="background-image: url('images/bike-shop-interior.png');">
+        </div>
+        <div class="overlay"></div>
+      </div>
+    </section>
+
+    <!-- Brand Authority Carousel -->
+    <section class="brands-section section">
+      <div class="container">
+        <h2 class="section-title text-center">Our Brands</h2>
+        <div class="brand-carousel">
+          <div class="brand-track">
+            <img src="images/brands/transition-logo.png" alt="Transition Bikes">
+            <img src="images/brands/knolly-logo.png" alt="Knolly">
+            <img src="images/brands/canfield-logo.png" alt="Canfield">
+            <img src="images/brands/khs-logo.png" alt="KHS">
+            <!-- Duplicate for seamless scroll -->
+            <img src="images/brands/transition-logo.png" alt="Transition Bikes">
+            <img src="images/brands/knolly-logo.png" alt="Knolly">
+            <img src="images/brands/canfield-logo.png" alt="Canfield">
+            <img src="images/brands/khs-logo.png" alt="KHS">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / Location Quick View -->
+    <section id="contact" class="contact-preview section">
+      <div class="container text-center">
+        <h2>Visit Us</h2>
+        <p>1213 W Elizabeth St, Fort Collins, CO</p>
+
+        <!-- Gallery Section -->
+        <div class="gallery-track-wrapper">
+          <div class="gallery-track">
+            <!-- JS will populate this -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="global-footer"></footer>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/jpeg" href="/road34-favicon.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Specials & Menu | Road 34</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Oswald:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+    <header id="global-header"></header>
+
+    <main class="page-specials">
+        <!-- Hero Banner -->
+        <section class="specials-hero">
+            <div class="overlay"></div>
+            <div class="container hero-content text-center">
+                <h1>Happy Hour Everyday</h1>
+                <p class="subtitle">4-7 PM and All Day Sunday</p>
+            </div>
+        </section>
+
+        <!-- Specials Sections -->
+        <section class="section specials-container">
+            <div class="container">
+
+                <!-- Happy Hour Feature -->
+                <div class="happy-hour-banner">
+                    <div class="hh-badge">
+                        <i class="ph ph-clock-countdown"></i>
+                        <span>4PM - 7PM</span>
+                    </div>
+                    <div class="hh-content-wrapper">
+                        <div class="hh-titles">
+                            <h2 class="hh-main-title">Happy Hour</h2>
+                            <p class="hh-subtitle">Everyday 4:00 PM - 7:00 PM <span class="accent">&</span> All Day
+                                Sunday</p>
+                        </div>
+                        <div class="hh-details">
+                            <div class="hh-column">
+                                <h3><i class="ph ph-beer-bottle"></i> Drinks</h3>
+                                <ul>
+                                    <li><span class="highlight">$2.00</span> Coors, Coors Light, & Old Aggie</li>
+                                    <li><span class="highlight">$0.50 OFF</span> All Other Drafts</li>
+                                </ul>
+                            </div>
+                            <div class="hh-column">
+                                <h3><i class="ph ph-pizza"></i> Food</h3>
+                                <ul>
+                                    <li><span class="highlight">$0.50 OFF</span> All Appetizers</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Late Night Weekly List -->
+                <div class="late-night-section">
+                    <div class="ln-header text-center">
+                        <h2 class="section-title">Late Night Lineup</h2>
+                        <p class="ln-time">8:00 PM - Midnight</p>
+                    </div>
+
+                    <div class="weekly-list">
+                        <!-- Monday -->
+                        <div class="day-row" data-day="1">
+                            <div class="day-name">Monday</div>
+                            <div class="day-offer">$8.00 Micro Pitchers</div>
+                        </div>
+
+                        <!-- Tuesday -->
+                        <div class="day-row" data-day="2">
+                            <div class="day-name">Tuesday</div>
+                            <div class="day-offer">
+                                <span>$2.00 Wells</span>
+                                <span>$4.00 Doubles</span>
+                            </div>
+                        </div>
+
+                        <!-- Wednesday -->
+                        <div class="day-row" data-day="3">
+                            <div class="day-name">Wednesday</div>
+                            <div class="day-offer">
+                                <span>$2.00 Domestics</span>
+                                <span>$2.00 Wells</span>
+                                <span>$4.00 Doubles</span>
+                            </div>
+                        </div>
+
+                        <!-- Thursday -->
+                        <div class="day-row" data-day="4">
+                            <div class="day-name">Thursday</div>
+                            <div class="day-offer">
+                                <span>$1.00 Old Aggie Draft</span>
+                                <span>$2.00 New Belgium Drafts</span>
+                            </div>
+                        </div>
+
+                        <!-- Friday -->
+                        <div class="day-row" data-day="5">
+                            <div class="day-name">Friday</div>
+                            <div class="day-offer muted">Standard Pricing</div>
+                        </div>
+
+                        <!-- Saturday -->
+                        <div class="day-row" data-day="6">
+                            <div class="day-name">Saturday</div>
+                            <div class="day-offer">$3.00 Green Tea Shots</div>
+                        </div>
+
+                        <!-- Sunday -->
+                        <div class="day-row highlight-row" data-day="0">
+                            <div class="day-name">Sunday</div>
+                            <div class="day-offer">Happy Hour Pricing All Day</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Menu Tabs -->
+        <section class="section menu-section">
+            <div class="container">
+                <h2 class="section-title text-center">The Menu</h2>
+
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="food">Hot Food</button>
+                    <button class="tab-btn" data-tab="beer">Cold Beer</button>
+                </div>
+
+                <div class="tab-content active" id="food">
+                    <div class="menu-images">
+                        <img src="/images/menu-appetizers.png" alt="Appetizers Menu" class="menu-img">
+                        <img src="/images/menu-sandwiches.png" alt="Sandwiches Menu" class="menu-img">
+                    </div>
+                </div>
+
+                <div class="tab-content" id="beer">
+                    <div class="menu-images">
+                        <img src="/images/menu-draft-list.png" alt="Draft List" class="menu-img">
+                        <img src="/images/menu-bottles-cans.png" alt="Bottles and Cans" class="menu-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="global-footer"></footer>
+    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/specials.js"></script>
+</body>
+
+</html>
