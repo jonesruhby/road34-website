@@ -358,11 +358,13 @@ footer {
 }
 
 .brand-carousel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: var(--spacing-xl);
-  flex-wrap: wrap;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  padding: var(--spacing-md) 0;
+  /* Mask edges for smooth effect */
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 }
 
 .brand-item {
@@ -936,18 +938,33 @@ footer {
   transition: font-size 0.3s ease;
 }
 
-.brand-track img {
-  height: 80px;
-  width: auto;
-  margin: 0 var(--spacing-xl);
-  filter: grayscale(100%);
-  opacity: 0.7;
-  transition: all 0.3s ease;
-  /* Fix for black logos on dark bg */
-  background: white;
-  padding: 10px;
-  border-radius: 4px;
+.brand-track {
+  display: flex;
+  width: max-content;
+  gap: var(--spacing-xl);
+  animation: scrollBrands 30s linear infinite;
 }
+
+.brand-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scrollBrands {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    /* Move by half the width (one set of items) */
+    /* Since we don't know the exact width in px, we rely on the content being exactly duplicated. 
+       If the track contains [A B C D A B C D], moving -50% moves it to the start of the second set. */
+    transform: translateX(-50%);
+  }
+}
+
+/* 
+.brand-track img removed - styles are handled by .brand-item and .brand-item img 
+*/
 
 .tap-hint {
   font-size: 0.8rem;
